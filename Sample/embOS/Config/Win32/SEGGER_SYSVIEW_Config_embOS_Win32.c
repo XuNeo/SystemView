@@ -42,14 +42,14 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.40                                    *
+*       SystemView version: 3.32                                    *
 *                                                                    *
 **********************************************************************
 -------------------------- END-OF-HEADER -----------------------------
 
 File    : SEGGER_SYSVIEW_Config_embOS_Win32.c
 Purpose : Sample setup configuration of SystemView with embOS.
-Revision: $Rev: 28344 $
+Revision: $Rev: 25331 $
 */
 #include "RTOS.h"
 #include "SEGGER_SYSVIEW.h"
@@ -749,7 +749,6 @@ _SYS_THREAD_PROC_EX_TYPE _SysViewCommThread(void* pPara) {
   Result = 0;
   ChannelID = (int)pPara;
   hSockSV = _SYS_SOCKET_INVALID_HANDLE;
-  v = 0;
   //
   // Try and connect to SystemView instance
   //
