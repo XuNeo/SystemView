@@ -42,7 +42,7 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.32                                    *
+*       SystemView version: 3.30                                    *
 *                                                                    *
 **********************************************************************
 ---------------------------END-OF-HEADER------------------------------
@@ -50,7 +50,7 @@ File    : SEGGER_RTT_Conf.h
 Purpose : Implementation of SEGGER real-time transfer (RTT) which
           allows real-time communication on targets which support
           debugger memory accesses while the CPU is running.
-Revision: $Rev: 24316 $
+Revision: $Rev: 21386 $
 
 */
 
@@ -190,7 +190,7 @@ Revision: $Rev: 24316 $
                                                   );                                                \
                                 }
 
-  #elif (defined(__ARM_ARCH_7A__) || defined(__ARM_ARCH_7R__))
+  #elif defined(__ARM_ARCH_7A__)
     #define SEGGER_RTT_LOCK() {                                                \
                                  unsigned int _SEGGER_RTT__LockState;                       \
                                  __asm volatile ("mrs r1, CPSR \n\t"           \

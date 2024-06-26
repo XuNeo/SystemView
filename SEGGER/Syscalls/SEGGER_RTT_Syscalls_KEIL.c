@@ -42,14 +42,14 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.32                                    *
+*       SystemView version: 3.30                                    *
 *                                                                    *
 **********************************************************************
 ---------------------------END-OF-HEADER------------------------------
 File    : RTT_Syscalls_KEIL.c
 Purpose : Retargeting module for KEIL MDK-CM3.
           Low-level functions for using printf() via RTT
-Revision: $Rev: 24316 $
+Revision: $Rev: 20754 $
 Notes   : (1) https://wiki.segger.com/Keil_MDK-ARM#RTT_in_uVision
 ----------------------------------------------------------------------
 */

@@ -42,14 +42,14 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.32                                    *
+*       SystemView version: 3.30                                    *
 *                                                                    *
 **********************************************************************
 -------------------------- END-OF-HEADER -----------------------------
 
 File    : SEGGER_SYSVIEW_Config_embOS.c
 Purpose : Sample setup configuration of SystemView with embOS.
-Revision: $Rev: 25330 $
+Revision: $Rev: 21319 $
 */
 #include "RTOS.h"
 #include "SEGGER_SYSVIEW.h"
@@ -135,7 +135,7 @@ void SEGGER_SYSVIEW_Conf(void) {
   }
   SEGGER_SYSVIEW_Init(SEGGER_SYSVIEW_TIMESTAMP_FREQ, SEGGER_SYSVIEW_CPU_FREQ,
                       &SYSVIEW_X_OS_TraceAPI, _cbSendSystemDesc);
-  OS_SetTraceAPI(&embOS_TraceAPI_SYSVIEW);   // Configure embOS to use SYSVIEW.
+  OS_TRACE_SetAPI(&embOS_TraceAPI_SYSVIEW);  // Configure embOS to use SYSVIEW.
 #if SEGGER_SYSVIEW_START_ON_INIT
   SEGGER_SYSVIEW_Start();                    // Start recording to catch system initialization.
 #endif

@@ -42,13 +42,13 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.32                                    *
+*       SystemView version: 3.30                                    *
 *                                                                    *
 **********************************************************************
 -------------------------- END-OF-HEADER -----------------------------
 File    : SEGGER_SYSVIEW_Win32.h
 Purpose : System visualization API.
-Revision: $Rev: 25331 $
+Revision: $Rev: 16723 $
 */
 
 #ifndef SEGGER_SYSVIEW_WIN32_H
