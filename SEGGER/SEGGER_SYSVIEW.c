@@ -42,14 +42,14 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       SystemView version: 3.52                                    *
+*       SystemView version: 3.50a                                    *
 *                                                                    *
 **********************************************************************
 -------------------------- END-OF-HEADER -----------------------------
 
 File    : SEGGER_SYSVIEW.c
 Purpose : System visualization API implementation.
-Revision: $Rev: 29105 $
+Revision: $Rev: 29107 $
 
 Additional information:
   Packet format:
